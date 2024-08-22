@@ -38,7 +38,7 @@ def main():
             else:
                 print("No new listings found.")
 
-            # Wait for a random interval (7 to 21 minutes)
+            # Wait for a random interval (8 to 22 minutes) in order to simulate real human activity
             wait_time = random.randint(8*60, 22*60)  # Convert minutes to seconds
             print(f"Waiting for {wait_time} seconds before the next run.")
             time.sleep(wait_time)
