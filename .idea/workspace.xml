@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5870aa8-65bd-4e15-a872-84700574a8b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/findNewListings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retrieve_listings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_new_listings.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_new_listings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listings.json" beforeDir="false" afterPath="$PROJECT_DIR$/listings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retrieve_listings.py" beforeDir="false" afterPath="$PROJECT_DIR$/retrieve_listings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_notification_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_notification_email.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +35,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.findNewListings.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.retrieveListings+output.executor": "Run",
-    "Python.retrieve_listings.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.findNewListings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_new_listings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.retrieveListings+output.executor&quot;: &quot;Run&quot;,
+    &quot;Python.retrieve_listings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.send_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python.send_email_notification.executor&quot;: &quot;Run&quot;,
+    &quot;Python.send_notification_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_email.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,7 +76,11 @@
       <workItem from="1724189078875" duration="2498000" />
       <workItem from="1724191631803" duration="1092000" />
       <workItem from="1724261428351" duration="1298000" />
-      <workItem from="1724262873500" duration="3783000" />
+      <workItem from="1724262873500" duration="6698000" />
+      <workItem from="1724283284546" duration="1489000" />
+      <workItem from="1724285637063" duration="191000" />
+      <workItem from="1724286616493" duration="6020000" />
+      <workItem from="1724339708945" duration="715000" />
     </task>
     <servers />
   </component>
@@ -79,8 +89,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GetHousingGroningen$main.coverage" NAME="main Coverage Results" MODIFIED="1724263381866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GetHousingGroningen$findNewListings.coverage" NAME="findNewListings Coverage Results" MODIFIED="1724266659284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$findNewListings.coverage" NAME="findNewListings Coverage Results" MODIFIED="1724284925997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$send_email_notification.coverage" NAME="send_email_notification Coverage Results" MODIFIED="1724284919545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GetHousingGroningen$retrieveListings_output.coverage" NAME="retrieveListings+output Coverage Results" MODIFIED="1724264876459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$test_email.coverage" NAME="test_email Coverage Results" MODIFIED="1724284578412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$find_new_listings.coverage" NAME="find_new_listings Coverage Results" MODIFIED="1724289079209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$send_email.coverage" NAME="send_email Coverage Results" MODIFIED="1724284854850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GetHousingGroningen$send_notification_email.coverage" NAME="send_notification_email Coverage Results" MODIFIED="1724285038696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GetHousingGroningen$retrieve_listings.coverage" NAME="retrieve_listings Coverage Results" MODIFIED="1724265793864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

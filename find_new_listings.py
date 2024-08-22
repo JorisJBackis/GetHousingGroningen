@@ -1,33 +1,50 @@
+import time
+import random
 from retrieve_listings import fetch_listings
-from send_notification_email import send_email  # Import the send_email function
+from send_notification_email import send_email
 import json
 import os
 
-# Load the previous listings
 def load_previous_listings(file_path='listings.json'):
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
             return json.load(file)
     return []
 
-# Save the current listings
 def save_current_listings(listings, file_path='listings.json'):
     with open(file_path, 'w') as file:
         json.dump(listings, file)
 
-# Detect new listings
 def detect_new_listings(current_listings, previous_listings):
     new_listings = [listing for listing in current_listings if listing not in previous_listings]
     return new_listings
 
-# Main script to check for new listings and send notifications
-if __name__ == "__main__":
-    previous_listings = load_previous_listings()
-    current_listings = fetch_listings()  # Fetch the current listings
-    new_listings = detect_new_listings(current_listings, previous_listings)
+def main():
+    while True:
+        # Get the current time as a string in "HH:MM" format
+        current_time_str = time.strftime("%H:%M")
+        start_time_str = "08:00"
+        end_time_str = "17:30"
 
-    if new_listings:
-        send_email(new_listings, 'recipient-email@example.com')  # Replace with your recipient email
-        save_current_listings(current_listings)  # Update the listings.json file
-    else:
-        print("No new listings found.")
+        # Check if the current time is within working hours
+        if start_time_str <= current_time_str <= end_time_str:
+            previous_listings = load_previous_listings()
+            current_listings = fetch_listings()
+            new_listings = detect_new_listings(current_listings, previous_listings)
+
+            if new_listings:
+                send_email(new_listings, 'jorisbackis@gmail.com')  # Replace with your email
+                save_current_listings(current_listings)
+            else:
+                print("No new listings found.")
+
+            # Wait for a random interval (7 to 21 minutes)
+            wait_time = random.randint(8*60, 22*60)  # Convert minutes to seconds
+            print(f"Waiting for {wait_time} seconds before the next run.")
+            time.sleep(wait_time)
+        else:
+            print("Outside of working hours. Exiting.")
+            break  # Exit the loop and end the script
+
+if __name__ == "__main__":
+    main()
